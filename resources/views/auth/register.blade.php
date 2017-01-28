@@ -65,6 +65,11 @@
                                 <button type="submit" class="btn btn-primary">
                                     Register
                                 </button>
+                                <a href="{{ url('auth/facebook') }}" class="btn btn-primary" style="background-color: #3B5998;">
+                                    <span class="fa fa-facebook"></span>
+                                    &nbsp; &nbsp;
+                                    Login with Facebook
+                                </a>
                             </div>
                         </div>
                     </form>
