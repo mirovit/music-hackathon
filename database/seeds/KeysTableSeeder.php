@@ -12,7 +12,10 @@ class KeysTableSeeder extends Seeder
      */
     public function run()
     {
-        App\Models\Key::create(['name' => 'test', 'slug' => 'test']);
+        foreach (['C Major', 'Db Major', 'D Major', 'Eb Major', 'E Major', 'F Major', 'Gb Major', 'G Major', 'Ab Major', 'A Major', 'Bb Major', 'B Major'] as $value) {
+
+            App\Models\Key::create(['name' => $value, 'slug' => str_slug($value)]);
+        }
     }
 
 }
