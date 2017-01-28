@@ -10,7 +10,6 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ url('css/edit.css') }}" rel="stylesheet">
     <link href="{{ url('css/app.css') }}" rel="stylesheet">
 
     <!-- Scripts -->

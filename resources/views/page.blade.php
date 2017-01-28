@@ -2,23 +2,16 @@
 <html lang="en">
 @include('layouts.header')
 <body>
-<div id="app">
 @include('layouts.navigation')
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Dashboard</div>
-
-                    <div class="panel-body">
-                        You are logged in!
-                    </div>
-                </div>
-            </div>
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <div class="slogan-a">penis</div>
         </div>
     </div>
-</div>
+
+
+
 
 <!-- Scripts -->
 <script src="{{url('/js/app.js')}}"></script>
