@@ -20,17 +20,21 @@ Route::get('/home', [
 ]);
 
 Route::group(['middleware' => 'auth'], function(){
+    Route::get('/projects/', [
+        'as'    => 'project.home',
+        'uses'  => 'ProjectsController@index'
+    ]);
     Route::get('/project/create/', [
-        'as'    => 'app.home',
-        'uses'  => 'ProjectController@create'
+        'as'    => 'project.create',
+        'uses'  => 'ProjectsController@create'
     ]);
     Route::get('/project/select-instrument/', [
-        'as'    => 'app.home',
-        'uses'  => 'ProjectController@select-instrument'
+        'as'    => 'project.select-instrument',
+        'uses'  => 'ProjectsController@select-instrument'
     ]);
     Route::get('/project/compose/', [
-        'as'    => 'app.home',
-        'uses'  => 'ProjectController@compose'
+        'as'    => 'project.compose',
+        'uses'  => 'ProjectsController@compose'
     ]);
 });
 
