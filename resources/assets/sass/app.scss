@@ -8,6 +8,53 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+
+.selectInstrument {
+  color: #3097D1;
+  text-decoration: none;
+  border: 2px dashed black;
+  float: left;
+  padding: 10px;
+
+  &:hover {
+    border: 2px solid black;
+  }
+
+  &.inactive{
+    opacity: 0.2;
+    background: #fefefe;
+    &:hover {
+      border: 2px dashed black;
+      cursor: not-allowed;
+    }
+  }
+
+}
+
+$smNoteWidth: 5px;
+
+.slot16note,
+.slotSixteenNote {
+  width: $smNoteWidth;
+}
+.slot8note,
+.slotEightNote {
+  width: (2*$smNoteWidth);
+}
+.slot4note,
+.slotQuarterNote{
+  width: (4*$smNoteWidth);
+}
+.slot2note,
+.slotHalfNote {
+  width: (8*$smNoteWidth);
+}
+.slot1note,
+.slotWholeNote {
+  width: (16*$smNoteWidth);
+}
+
+
 @media screen and (max-width: 320px) {
 
   body {background-color:#f0f0f0;}

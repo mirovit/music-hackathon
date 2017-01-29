@@ -28,7 +28,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/project/start';
 
     /**
      * Create a new controller instance.
@@ -47,7 +47,7 @@ class LoginController extends Controller
     public function redirectToProvider($driver)
     {
         if (!in_array($driver, ['facebook'])) {
-            return redirect()->route('app.home');
+            return redirect()->route('project.start');
         }
 
         return Socialite::driver($driver)->redirect();
@@ -62,7 +62,7 @@ class LoginController extends Controller
     public function handleProviderCallback($driver)
     {
         if (!in_array($driver, ['facebook'])) {
-            return redirect()->route('app.home');
+            return redirect()->route('project.start');
         }
 
         $socialUser = Socialite::driver($driver)->user();
@@ -71,6 +71,6 @@ class LoginController extends Controller
 
         auth()->login($user);
 
-        return redirect()->route('app.home');
+        return redirect()->route('project.start');
     }
 }

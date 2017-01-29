@@ -35,15 +35,14 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/project/random', function() {
         return view('project.random');
     })->name('project.random');
-    Route::get('/project/brouse', function() {
-        return view('project.brouse');
-    })->name('project.brouse');
+    Route::get('/project/browse', function() {
+        return view('project.browse');
+    })->name('project.browse');
     Route::get('/instrument/select', function() {
         return view('instrument.select');
     })->name('instrument.select');
-    Route::get('/project/compose/', [
-        'as' => 'project.compose',
-        'uses' => 'ProjectsController@compose'
-    ]);
+    Route::get('/project/compose', function() {
+        return view('project.compose');
+    })->name('project.compose');
 });
 
