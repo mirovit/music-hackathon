@@ -36,7 +36,8 @@ Route::group(['middleware' => 'auth'], function() {
         return view('project.random');
     })->name('project.random');
     Route::get('/project/brouse', function() {
-        return view('project.brouse');
+        $projects = App\Models\Project::all();
+        return view('project.brouse')->with('projects', $projects);
     })->name('project.brouse');
     Route::get('/instrument/select', function() {
         return view('instrument.select');
