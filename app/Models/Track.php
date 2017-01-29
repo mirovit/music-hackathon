@@ -24,4 +24,9 @@ class Track extends Model
     {
         return $this->belongsTo(Instrument::class);
     }
+
+    public function channels()
+    {
+        return $this->hasMany(Channel::class);
+    }
 }

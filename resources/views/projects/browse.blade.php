@@ -18,9 +18,9 @@
                                     <p><b>Tempo:</b> {{ $project->tempo }}</p>
                                     <p><b>Progres:</b> @if($project->tracks->count() >4 ) {{ $project->tracks->count()-4 }} @else {{ $project->tracks->count() }} @endif/4</p>
                                     <p>
-                                        <a href="{{ route('instrument.select') }}" class="btn btn-primary" role="button">Select</a> 
+                                        <a href="{{ route('app.instruments.select') }}" class="btn btn-primary" role="button">Select</a>
                                         <button class="btn btn-success play-stop-btn" role="button"><span>Play</span>
-                                            <audio >
+                                            <audio>
                                                 <source src="{{ url('audio/1.mp3') }}" type="audio/mpeg">
                                             </audio>
                                         </button>
