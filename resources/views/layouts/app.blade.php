@@ -46,7 +46,11 @@ window.Laravel = {!! json_encode([
                     <div class="collapse navbar-collapse" id="app-navbar-collapse">
                         <!-- Left Side Of Navbar -->
                         <ul class="nav navbar-nav">
-                            &nbsp;
+                            &nbsp;<li>
+                                <a href="{{ route('app.projects.browse') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    Projects
+                                </a>
+                            </li>
                         </ul>
 
                         <!-- Right Side Of Navbar -->
