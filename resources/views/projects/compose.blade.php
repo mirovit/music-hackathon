@@ -119,20 +119,28 @@
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <span class="noteIcon wholeNote">
-                                                    <img style="width: 100%;" src="{{ asset('icons/note-whole.png') }}" />
+                                                    <img style="width: 100%;" src="{{ asset('img/icons/note-whole.png') }}" alt="" />
                                                 </span>
                                             </div>
                                             <div class="col-md-3">
-                                                <span class="noteIcon halfNote">{{ asset('icons/note-half.png') }}</span>
+                                                <span class="noteIcon halfNote">
+                                                     <img style="width: 100%;" src="{{ asset('img/icons/note-half.png') }}" alt="" />
+                                                </span>
                                             </div>
                                             <div class="col-md-3">
-                                                <span class="noteIcon quarterNote">{{ asset('icons/note-quarter.png') }}</span>
+                                                <span class="noteIcon quarterNote">
+                                                     <img style="width: 100%;" src="{{ asset('img/icons/note-quarter.png') }}" alt="" />
+                                                </span>
                                             </div>
                                             <div class="col-md-3">
-                                                <span class="noteIcon eightNote">{{ asset('icons/note-eight.png') }}</span>
+                                                <span class="noteIcon eightNote">
+                                                     <img style="width: 100%;" src="{{ asset('img/icons/note-eight.png') }}" alt="" />
+                                                </span>
                                             </div>
                                             <div class="col-md-3">
-                                                <span class="noteIcon sixteenthNote">{{ asset('icons/note-sixteen.png') }}</span>
+                                                <span class="noteIcon sixteenthNote">
+                                                     <img style="width: 100%;" src="{{ asset('img/icons/note-sixteen.png') }}" alt="" />
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
