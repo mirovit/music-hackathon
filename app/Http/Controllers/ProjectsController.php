@@ -71,7 +71,7 @@ class ProjectsController extends Controller
     public function getMidiData()
     {
 
-        $midiObject = new StdClass();
+        $midiObject = new \StdClass();
         $midiObject->name = "drum_track";
         $midiObject->track = 2;
         $midiObject->bulshits = 3;
