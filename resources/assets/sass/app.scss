@@ -8,6 +8,7 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+@import "project";
 
 .selectInstrument {
   color: #3097D1;
@@ -53,9 +54,6 @@ $smNoteWidth: 5px;
 .slotWholeNote {
   width: (16*$smNoteWidth);
 }
-
-
-@import "project";
 
 @media screen and (max-width: 320px) {
 
