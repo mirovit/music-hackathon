@@ -10,22 +10,22 @@
                 <div class="panel-body text-center">
                     <div class="col col-lg-12">
                         <div class="col col-lg-3">
-                            <a href="{{ route('project.compose') }}" class="selectInstrument">
+                            <a href="{{ route('app.projects.compose') }}" class="selectInstrument">
                                 <img style="width: 100%;" src="{{ url('images/piano.png') }}" />
                             </a>
                         </div>
                         <div class="col col-lg-3">
-                            <a href="{{ route('project.compose') }}" class="selectInstrument">
+                            <a href="{{ route('app.projects.compose') }}" class="selectInstrument">
                                 <img style="width: 100%;" src="{{ url('images/drum.png') }}" />
                             </a>
                         </div>
                         <div class="col col-lg-3">
-                            <a href="{{ route('project.compose') }}" class="selectInstrument">
+                            <a href="{{ route('app.projects.compose') }}" class="selectInstrument">
                                 <img style="width: 100%;" src="{{ url('images/bass.png') }}" />
                             </a>
                         </div>
                         <div class="col col-lg-3">
-                            <a href="{{ route('project.compose') }}" class="selectInstrument inactive">
+                            <a href="{{ route('app.projects.compose') }}" class="selectInstrument inactive">
                                 <img style="width: 100%;" src="{{ url('images/guitar.png') }}" />
                             </a>
                         </div>

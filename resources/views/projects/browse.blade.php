@@ -17,9 +17,9 @@
                                     <p>{{ $project->key->name }}</p>
                                     <p><b>Tempo:</b> {{ $project->tempo }}</p>
                                     <p>
-                                        <a href="{{ route('instrument.select') }}" class="btn btn-primary" role="button">Select</a> 
+                                        <a href="{{ route('app.instruments.select') }}" class="btn btn-primary" role="button">Select</a>
                                         <button class="btn btn-success play-stop-btn" role="button"><span>Play</span>
-                                            <audio >
+                                            <audio>
                                                 <source src="{{ url('audio/1.mp3') }}" type="audio/mpeg">
                                             </audio>
                                         </button>

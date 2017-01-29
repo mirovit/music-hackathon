@@ -29,7 +29,7 @@
                                 <option>5</option>
                             </select>
                         </div>
-                        <a href="{{ route('instrument.select') }}" class="btn btn-success btn-lg" >Start Project</a>
+                        <a href="{{ route('app.instruments.select') }}" class="btn btn-success btn-lg" >Start Project</a>
                     </form> 
                 </div>
             </div>
