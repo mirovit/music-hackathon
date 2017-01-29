@@ -36,13 +36,15 @@ Route::group(['middleware' => 'auth'], function() {
         return view('project.random');
     })->name('project.random');
     Route::get('/project/browse', function() {
-        return view('project.browse');
+        $projects = App\Models\Project::all();
+        return view('project.browse')->with('projects', $projects);
     })->name('project.browse');
     Route::get('/instrument/select', function() {
         return view('instrument.select');
     })->name('instrument.select');
-    Route::get('/project/compose', function() {
-        return view('project.compose');
-    })->name('project.compose');
+    Route::get('/project/compose/', [
+        'as' => 'project.compose',
+        'uses' => 'ProjectsController@compose'
+    ]);
 });
 
