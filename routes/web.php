@@ -42,7 +42,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/instrument/select', function() {
         return view('instrument.select');
     })->name('instrument.select');
-    Route::get('/project/compose/', [
+    Route::get('/project/compose/{progres?}', [
         'as' => 'project.compose',
         'uses' => 'ProjectsController@compose'
     ]);

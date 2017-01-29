@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 class ProjectsController extends Controller
 {
+
     public function create()
     {
         $user = auth()->user();
@@ -16,7 +17,7 @@ class ProjectsController extends Controller
     }
 
     //
-    public function compose()
+    public function compose($progres = 0)
     {
         $user = auth()->user();
 
@@ -61,7 +62,8 @@ class ProjectsController extends Controller
         return view('projects.compose', compact("user", "hrAreas"));
     }
 
-    public function getMidiData(){
+    public function getMidiData()
+    {
 
         $midiObject = new StdClass();
         $midiObject->name = "drum_track";
@@ -71,6 +73,6 @@ class ProjectsController extends Controller
         $JSON = json_encode($midiObject);
 
         return $JSON;
-
     }
+
 }

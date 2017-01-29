@@ -11,22 +11,22 @@
                     <form action="#" method="post">
                         <div class="form-group">
                             <label for="exampleSelect1">Select Tempo</label>
-                            <select class="form-control" id="exampleSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                            <input class="form-control" type="number" name="tempo" min="60" max="200" step="5">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleSelect2">Select Legnth</label>
+                            <select class="form-control" id="exampleSelect2">
+                                <option>16 bars</option>
+                                <option>32 bars</option>
+                                <option>64 bars</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="exampleSelect1">Select Legnth</label>
-                            <select class="form-control" id="exampleSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                            <label for="exampleSelect3">Select Legnth</label>
+                            <select class="form-control" id="exampleSelect3">
+                                <option>16 bars</option>
+                                <option>32 bars</option>
+                                <option>64 bars</option>
                             </select>
                         </div>
                         <a href="{{ route('instrument.select') }}" class="btn btn-success btn-lg" >Start Project</a>
