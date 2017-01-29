@@ -47,7 +47,12 @@ window.Laravel = {!! json_encode([
                         <!-- Left Side Of Navbar -->
                         <ul class="nav navbar-nav">
                             &nbsp;<li>
-                                <a href="{{ route('app.projects.browse') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <a href="{{ route('app.projects.start') }}" role="button" aria-expanded="false">
+                                    Start Project
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('app.projects.browse') }}" role="button" aria-expanded="false">
                                     Projects
                                 </a>
                             </li>
