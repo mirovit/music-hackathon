@@ -16,6 +16,12 @@ class ProjectsController extends Controller
         return view('projects.show', compact("title", "user", "hrAreas"));
     }
 
+    public function index()
+    {
+        $projects = Project::with('tracks')->get();
+        return view('projects.browse', compact("projects"));
+    }
+
     //
     public function compose($progres = 0)
     {

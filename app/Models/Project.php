@@ -37,6 +37,6 @@ class Project extends Model
 
     public function tracks()
     {
-        return $this->belongsTo(Track::class);
+        return $this->hasMany(Track::class);
     }
 }
