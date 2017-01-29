@@ -22,3 +22,13 @@ $factory->define(App\Models\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Models\Project::class, function(\Faker\Generator $faker) {
+    return [
+        'parent_id' => $faker->randomDigit,
+        'user_id' => App\Models\User::all()->random()->first()->id,
+        'key_id' => App\Models\Key::all()->random()->first()->id,
+        'tempo' => $faker->numberBetween(60, 180),
+        'length' => $faker->randomElement([16, 32, 64]),
+    ];
+});
